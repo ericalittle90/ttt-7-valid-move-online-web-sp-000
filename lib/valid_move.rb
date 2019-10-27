@@ -1,8 +1,8 @@
 def valid_move?(board, index)
-  if position_taken?(board, index) && board[index] == be_between?(0,8)
-    false
-  else
+  if !position_taken?(board, index) && board[index] == be_between?(0,8)
     true
+  else
+    false
   end
 end
 
